@@ -6,6 +6,28 @@
 # DamageMultiplierCS2
 CS2 implementation of weapons damage multiplier plugin written in C# for CounterStrikeSharp.
 
+## Config
+The configuration file can be found at the following path: `addons\counterstrikesharp\configs\plugins\DamageMultiplierCS2\DamageMultiplierCS2.json`
+
+```json
+{
+  "Permissions": {
+    "*": {
+      "Weapons": {
+        "*": 1,
+        "hegrenade": 1.1
+      }
+    },
+    "@css/vip": {
+      "Weapons": {
+        "*": 1.25
+      }
+    }
+  },
+  "ConfigVersion": 1
+}
+```
+
 ## Requirements
 - [Metamod:Source](https://www.sourcemm.net/downloads.php/?branch=master)
 - [CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp)
